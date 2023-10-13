@@ -1,0 +1,15 @@
+body{
+    display:flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.765);
+    color: white;
+}
+#lockdiv{
+    display:flex;
+    justify-content: center;
+    font:xx-large;
+    margin:30% 30% 30% 30%;
+}
+a{
+    text-decoration: none;
+}

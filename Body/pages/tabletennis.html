@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tabletennis.css"/>
+</head>
+<body>
+     <div id="tabletennisheaddingdiv">
+        <h1 id="heading">TABLE TENNIS</h1>
+     </div>
+     <div id="entry">
+        <table cellspacing="10px"id="entrytable">
+            <tr>
+                <td align="center"><i>Team1 Name</i></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="text" id="team1"/></td>
+            </tr>
+            <tr>
+                <td align="center">VS</td>
+            </tr>
+            <tr>
+                <td align="center"><i>Team2 Name</i></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="text" id="team2" /></td>
+            </tr>
+            <tr align="center">
+                <td><button onclick="playersnames()">Enter</button></td>
+            </tr>
+        </table>
+</div>
+<div id="badminton2scorediv">
+    <i id="pointstype">11 Points Game</i><br>
+    <table>
+        <tr id="badmintonrows">
+            <td id="badmintontabledata"><p class="p1name" id="1name">player1name</p></td>
+            <td id="badmintontabledata" align="center"><i>VS</i></td>
+            <td id="badmintontabledata"><p class="p2name" id="2name">player2name</p></td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr id="badmintonrows">
+            <td id="badmintontabledata"><button id="badmintonscore1">0</button></td>
+            <td id="badmintontabledata"></td>
+            <td id="badmintontabledata"><button id="badmintonscore2">0</button></td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr id="badmintonrows">
+            <td><button id="p1p" onclick="badmintonscorecard1()">Point</button></td>
+            <td></td>
+            <td><button id="p2p" onclick="badmintonscorecard2()">Point</button></td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr id="badmintonrows">
+            <td></td>
+            <td><button><p id="badmintonresult">Game is going on</p></button></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<script src="./tabletennis.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(173, 209, 209);
+    user-select: none;
+}
+#entry{
+    display:flex;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 30% 15% 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+#next{
+    background-color: rgb(48, 183, 84);
+    border-radius:30%;
+    border: 0;
+}
+#entrytable{
+    font-weight: 500;
+    font-family:cursive;
+}
+button{
+    border-radius: 12%;
+}
+a{
+    text-decoration: none;
+}
+#badmintonbody1{
+    background-color: rgb(117, 129, 139);
+}
+#gamevarient1title{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: larger;
+    color: lavenderblush;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px rgba(217, 81, 81, 0.865);
+}
+#title{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px brown;
+}
+#selectingvarient{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10% 30% 10% 30%;
+    padding:20px;
+}
+#selectingvarientbutton{
+    padding: 6px 60px 2px 60px;
+    box-shadow: 0.2em 0.2em rgb(184, 88, 88);
+}
+i{
+    font-size: larger;
+    font-family:cursive;
+}
+#gamebody1{
+    background-image: linear-gradient(rgba(63, 28, 70, 0.674),rgba(89, 46, 83, 0.642),rgba(55, 18, 72, 0.669),rgba(63, 28, 70, 0.674));
+    opacity: 0.8;
+    
+}
+#gamebody2{
+    background-color: rgb(195, 191, 186);
+}
+#gamebody3{
+    background-color: rgb(197, 210, 227);
+}
+#gamevarient1title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#badmintontabledata{
+    height: 5%;
+    width: 30%;
+    align-items: center;
+}
+#badmintonscore1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    font-size: x-large;
+}
+#badmintonscore2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+}
+#badminton1scorediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#badminton2scorediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#badminton3scorediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#badmintonrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap: 80%;
+}
+#badmintonresult{
+    color:rgb(141, 21, 21);
+    text-shadow:0.5px 0.5px rgb(41, 202, 35);
+    width: 120px;
+    font-size: larger;
+}
+#p1p{
+    background-color:rgb(221, 225, 167);
+    border-radius:25%;
+    border: 2px;
+    border-style: groove;
+}
+#p2p{
+    background-color: rgb(221, 225, 167);
+    border-radius:25%;
+    border: 2px;
+    border-style: groove;
+}
+.p1name{
+    font-size:x-large;
+}
+.p2name{
+    font-size:x-large;
+}
+#pointstype{
+    font-size: xx-large;
+}

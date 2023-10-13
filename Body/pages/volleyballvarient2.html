@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./volleyball.css"/>
+ <!--    <link rel="stylesheet" href="{{url_for(static/badminton.css)}}"> -->
+</head>
+<body id="gamebody1">
+    <div id="gamevarient1title">
+        <h1>volleyball</h1>
+    </div>
+    <div id="entry">
+            <table cellspacing="10px"id="entrytable">
+                <tr>
+                    <td><h1>volleyball</h1></td>
+                </tr>
+                <tr>
+                    <td align="center"><i>Team1 Name</i></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="text" id="team1"/></td>
+                </tr>
+                <tr>
+                    <td align="center">VS</td>
+                </tr>
+                <tr>
+                    <td align="center"><i>Team2 Name</i></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="text" id="team2" /></td>
+                </tr>
+                <tr align="center">
+                    <td><button onclick="playersnames()">Enter</button></td>
+                </tr>
+            </table>
+    </div>
+    <div id="volleyballplayers">
+        <div>
+            <i>Team1 Players</i><br>
+            <input type="text" id="p1t1" placeholder="player1name"/><br>
+            <input type="text" id="p2t1" placeholder="player2name"/><br>
+            <input type="text" id="p3t1" placeholder="player3name"/><br>
+            <input type="text" id="p4t1" placeholder="player4name"/><br>
+            <input type="text" id="p5t1" placeholder="player5name"/><br>
+            <input type="text" id="p6t1" placeholder="player6name"/><br>
+            <input type="text" id="p7t1" placeholder="player7name"/><br>
+            <input type="text" id="p8t1" placeholder="player8name"/><br>
+            <input type="text" id="p9t1" placeholder="player9name"/><br>
+            <input type="text" id="p10t1" placeholder="player10name"/><br>
+        </div>
+        <div>
+            <i>Team2 Players</i><br>
+            <input type="text" id="p1t2" placeholder="player1name"/><br>
+            <input type="text" id="p2t2" placeholder="player2name"/><br>
+            <input type="text" id="p3t2" placeholder="player3name"/><br>
+            <input type="text" id="p4t2" placeholder="player4name"/><br>
+            <input type="text" id="p5t2" placeholder="player5name"/><br>
+            <input type="text" id="p6t2" placeholder="player6name"/><br>
+            <input type="text" id="p7t2" placeholder="player7name"/><br>
+            <input type="text" id="p8t2" placeholder="player8name"/><br>
+            <input type="text" id="p9t2" placeholder="player9name"/><br>
+            <input type="text" id="p10t2" placeholder="player10name"/><br>
+        </div>
+    </div>
+    <div align="center">
+        <button onclick="playersindividualnames()">Submit</button>
+    </div>
+    <div id="badminton2scorediv">
+        <i id="pointstype">25 Points Game</i><br>
+        <table>
+            <tr id="badmintonrows">
+                <td id="badmintontabledata"><p class="p1name" id="1name">player1name</p></td>
+                <td id="badmintontabledata" align="center"><i>VS</i></td>
+                <td id="badmintontabledata"><p class="p2name" id="2name">player2name</p></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr id="badmintonrows">
+                <td id="badmintontabledata"><button id="badmintonscore1">0</button></td>
+                <td id="badmintontabledata"></td>
+                <td id="badmintontabledata"><button id="badmintonscore2">0</button></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr id="badmintonrows">
+                <td><button id="p1p" onclick="badmintonscorecard1()">Point</button></td>
+                <td></td>
+                <td><button id="p2p" onclick="badmintonscorecard2()">Point</button></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr id="badmintonrows">
+                <td></td>
+                <td><button><p id="badmintonresult">Game is going on</p></button></td>
+                <td></td>
+            </tr>
+            <tr>
+                    <td><div>
+                        <p class="pname" id="p1t1n1">player1team1 : </p><button id="t1p1">0</button><input type="number" class="ip" id="t1p11"/><button onclick="scoreoneteamone()" id="">Point</button>
+                        <p class="pname" id="p2t1n2">player2team1 : </p><button id="t1p2">0</button><input type="number" class="ip" id="t1p22"/><button onclick="scoretwoteamone()" id="">Point</button>
+                        <p class="pname" id="p3t1n3">player3team1 : </p><button id="t1p3">0</button><input type="number" class="ip" id="t1p33"/><button onclick="scorethreeteamone()" id="">Point</button>
+                        <p class="pname" id="p4t1n4">player4team1 : </p><button id="t1p4">0</button><input type="number" class="ip" id="t1p44"/><button onclick="scorefourteamone()" id="">Point</button>
+                        <p class="pname" id="p5t1n5">player5team1 : </p><button id="t1p5">0</button><input type="number" class="ip" id="t1p55"/><button onclick="scorefiveteamone()" id="">Point</button>
+                        <p class="pname" id="p6t1n6">player6team1 : </p><button id="t1p6">0</button><input type="number" class="ip" id="t1p66"/><button onclick="scoresixteamone()" id="">Point</button>
+                        <p class="pname" id="p7t1n7">player7team1 : </p><button id="t1p7">0</button><input type="number" class="ip" id="t1p77"/><button onclick="scoreseventeamone()" id="">Point</button>
+                        <p class="pname" id="p8t1n8">player8team1 : </p><button id="t1p8">0</button><input type="number" class="ip" id="t1p88"/><button onclick="scoreeightteamone()" id="">Point</button>
+                        <p class="pname" id="p9t1n9">player9team1 : </p><button id="t1p9">0</button><input type="number" class="ip" id="t1p99"/><button onclick="scorenineteamone()" id="">Point</button>
+                        <p class="pname" id="p10t1n10">player10team1 : </p><button id="t1p10">0</button><input type="number" class="ip" id="t1p1010"/><button onclick="scoretenteamone()" id="">Point</button>
+                    </div></td>
+                    <td><div>
+                        <p class="pname" id="p1t2n1">player1team2 : </p><button id="t2p1">0</button><input type="number" class="ip" id="t2p11"/><button onclick="scoreoneteamtwo()" id="">Point</button>
+                        <p class="pname" id="p2t2n2">player2team2 : </p><button id="t2p2">0</button><input type="number" class="ip" id="t2p22"/><button onclick="scoretwoteamtwo()" id="">Point</button>
+                        <p class="pname" id="p3t2n3">player3team2 : </p><button id="t2p3">0</button><input type="number" class="ip" id="t2p33"/><button onclick="scorethreeteamtwo()" id="">Point</button>
+                        <p class="pname" id="p4t2n4">player4team2 : </p><button id="t2p4">0</button><input type="number" class="ip" id="t2p44"/><button onclick="scorefourteamtwo()" id="">Point</button>
+                        <p class="pname" id="p5t2n5">player5team2 : </p><button id="t2p5">0</button><input type="number" class="ip" id="t2p55"/><button onclick="scorefiveteamtwo()" id="">Point</button>
+                        <p class="pname" id="p6t2n6">player6team2 : </p><button id="t2p6">0</button><input type="number" class="ip" id="t2p66"/><button onclick="scoresixteamtwo()" id="">Point</button>
+                        <p class="pname" id="p7t2n7">player7team2 : </p><button id="t2p7">0</button><input type="number" class="ip" id="t2p77"/><button onclick="scoreseventeamtwo()" id="">Point</button>
+                        <p class="pname" id="p8t2n8">player8team2 : </p><button id="t2p8">0</button><input type="number" class="ip" id="t2p88"/><button onclick="scoreeightteamtwo()" id="">Point</button>
+                        <p class="pname" id="p9t2n9">player9team2 : </p><button id="t2p9">0</button><input type="number" class="ip" id="t2p99"/><button onclick="scorenineteamtwo()" id="">Point</button>
+                        <p class="pname" id="p10t2n10">player10team2 : </p><button id="t2p10">0</button><input type="number" class="ip" id="t2p1010"/><button onclick="scoretenteamtwo()" id="">Point</button>
+                    </div></td>
+            </tr>
+        </table>
+    </div>
+     <script src="./volleyball2.js"></script>
+</body>
+</html>

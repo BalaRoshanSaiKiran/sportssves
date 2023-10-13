@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    basket Ball
+    <!-- Page where scores are updated -->
+<button onclick="updateScore(1)">Increase Score</button>
+<button onclick="updateScore(-1)">Decrease Score</button>
+
+<script>
+  const socket = io();
+
+  function updateScore(change) {
+    // Send the updated score to the server
+    socket.emit('updateScore', liveScore + change);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: aliceblue;
+    font-family: Poppins;
+    user-select: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+}
+li{
+    list-style: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: navy;
+}
+li:hover{
+    background-color: midnightblue;
+    color: aliceblue;
+}

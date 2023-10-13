@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:white;
+    font-family: Poppins;
+    user-select: none;
+}
+.menu-div{
+    display: flex;
+    justify-content: left;
+    gap:2%;
+    margin-left: 4%;
+    min-height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;    
+}
+.first{
+    height: fit-content;
+}
+marquee{
+    background-color: aliceblue;
+}

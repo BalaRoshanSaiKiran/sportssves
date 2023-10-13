@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./kabaddi.css"/>
+</head>
+<body>
+    <div class="title">
+        <h1><a id="kabaddiheading" href="./kabaddi.html" target="body">Kabaddi</a></h1>
+    </div>
+    <div>
+        <div>
+            <h2>Start a match</h2>
+            <fieldset>
+                <legend>Team Details</legend>
+                    <h3>Enter Team1 name :</h3>
+                    <input id="team1" type="text" placeholder="Team1 name" required/>
+                    <h3>Enter team2 name :</h3>
+                    <input id="team2" type="text" placeholder="Team2 name"/><br><br>
+                    <button onclick="submit()">Enter</button><br><br>
+                    <div id="playersmainnamesdiv">
+                        <div id="teamplayersdiv">
+                            <div>
+                                <i>Team1 Players</i><br>
+                                <input type="text" id="p1t1" placeholder="player1name"/><br>
+                                <input type="text" id="p2t1" placeholder="player2name"/><br>
+                                <input type="text" id="p3t1" placeholder="player3name"/><br>
+                                <input type="text" id="p4t1" placeholder="player4name"/><br>
+                                <input type="text" id="p5t1" placeholder="player5name"/><br>
+                                <input type="text" id="p6t1" placeholder="player6name"/><br>
+                                <input type="text" id="p7t1" placeholder="player7name"/><br>
+                                <input type="text" id="p8t1" placeholder="player8name"/><br>
+                                <input type="text" id="p9t1" placeholder="player9name"/><br>
+                                <input type="text" id="p10t1" placeholder="player10name"/><br>
+                            </div>
+                            <div>
+                                <i>Team2 Players</i><br>
+                                <input type="text" id="p1t2" placeholder="player1name"/><br>
+                                <input type="text" id="p2t2" placeholder="player2name"/><br>
+                                <input type="text" id="p3t2" placeholder="player3name"/><br>
+                                <input type="text" id="p4t2" placeholder="player4name"/><br>
+                                <input type="text" id="p5t2" placeholder="player5name"/><br>
+                                <input type="text" id="p6t2" placeholder="player6name"/><br>
+                                <input type="text" id="p7t2" placeholder="player7name"/><br>
+                                <input type="text" id="p8t2" placeholder="player8name"/><br>
+                                <input type="text" id="p9t2" placeholder="player9name"/><br>
+                                <input type="text" id="p10t2" placeholder="player10name"/><br>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="playersnames()">Submit</button>
+                        </div>
+                    </div>
+            </fieldset>
+        </div>
+        <div id="time">
+            <div id="timer">00:00</div>
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="scorecarddiv">
+            <table align="center">
+                <tr>
+                    <td><button id="team1score">00</button><p id="defaultname1"><b>Team1 Name</b></p></td>
+                    <td align="center"><i>VS</i></td>
+                    <td align="right"><button id="team2score">00</button><p id="defaultname2"><b>Team2 Name</b></p></td>
+                </tr>
+                <tr>
+                    <td id="scorebuttondata"><button id="scorebutton" onclick="onepointT1()"><b>1</b></button><button id="scorebutton" onclick="twopointT1()"><b>2</b></button><button id="scorebutton" onclick="threepointT1()"><b>3</b></button><button id="scorebutton" onclick="fourpointT1()"><b>4</b></button></td>
+                    <td align="center"><button id="riderlimit">00</button></td>
+                    <td></td>
+                    <td id="scorebuttondata1"><button id="scorebutton" onclick="onepointT2()"><b>1</b></button><button id="scorebutton" onclick="twopointT2()"><b>2</b></button><button id="scorebutton" onclick="threepointT2()"><b>3</b></button><button id="scorebutton" onclick="fourpointT2()"><b>4</b></button></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="somepointt1"/><button onclick="somepointT1()">Enter</button></td>
+                    <td align="center"></td>
+                    <td align="right"><input type="number" id="somepointt2"/><button onclick="somepointT2()">Enter</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="penaltyt1()">T1Penalty</button></td>
+                    <td></td>
+                    <td></td>
+                    <td id="penaltybutton"><button onclick="penaltyt2()">T2Penalty</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="result"><button id="result1">Game is going on</button></td>
+                    <td><button id="mvp">Player Of The Match is ....</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="playersindividualscore">
+            <div>
+                <p class="pname" id="p1t1n1">player1team1 : </p><button id="t1p1">0</button><input type="number" class="ip" id="t1p11"/><button onclick="scoreoneteamone()" id="">Point</button>
+                <p class="pname" id="p2t1n2">player2team1 : </p><button id="t1p2">0</button><input type="number" class="ip" id="t1p22"/><button onclick="scoretwoteamone()" id="">Point</button>
+                <p class="pname" id="p3t1n3">player3team1 : </p><button id="t1p3">0</button><input type="number" class="ip" id="t1p33"/><button onclick="scorethreeteamone()" id="">Point</button>
+                <p class="pname" id="p4t1n4">player4team1 : </p><button id="t1p4">0</button><input type="number" class="ip" id="t1p44"/><button onclick="scorefourteamone()" id="">Point</button>
+                <p class="pname" id="p5t1n5">player5team1 : </p><button id="t1p5">0</button><input type="number" class="ip" id="t1p55"/><button onclick="scorefiveteamone()" id="">Point</button>
+                <p class="pname" id="p6t1n6">player6team1 : </p><button id="t1p6">0</button><input type="number" class="ip" id="t1p66"/><button onclick="scoresixteamone()" id="">Point</button>
+                <p class="pname" id="p7t1n7">player7team1 : </p><button id="t1p7">0</button><input type="number" class="ip" id="t1p77"/><button onclick="scoreseventeamone()" id="">Point</button>
+                <p class="pname" id="p8t1n8">player8team1 : </p><button id="t1p8">0</button><input type="number" class="ip" id="t1p88"/><button onclick="scoreeightteamone()" id="">Point</button>
+                <p class="pname" id="p9t1n9">player9team1 : </p><button id="t1p9">0</button><input type="number" class="ip" id="t1p99"/><button onclick="scorenineteamone()" id="">Point</button>
+                <p class="pname" id="p10t1n10">player10team1 : </p><button id="t1p10">0</button><input type="number" class="ip" id="t1p1010"/><button onclick="scoretenteamone()" id="">Point</button>
+            </div>
+            <div>
+                <p class="pname" id="p1t2n1">player1team2 : </p><button id="t2p1">0</button><input type="number" class="ip" id="t2p11"/><button onclick="scoreoneteamtwo()" id="">Point</button>
+                <p class="pname" id="p2t2n2">player2team2 : </p><button id="t2p2">0</button><input type="number" class="ip" id="t2p22"/><button onclick="scoretwoteamtwo()" id="">Point</button>
+                <p class="pname" id="p3t2n3">player3team2 : </p><button id="t2p3">0</button><input type="number" class="ip" id="t2p33"/><button onclick="scorethreeteamtwo()" id="">Point</button>
+                <p class="pname" id="p4t2n4">player4team2 : </p><button id="t2p4">0</button><input type="number" class="ip" id="t2p44"/><button onclick="scorefourteamtwo()" id="">Point</button>
+                <p class="pname" id="p5t2n5">player5team2 : </p><button id="t2p5">0</button><input type="number" class="ip" id="t2p55"/><button onclick="scorefiveteamtwo()" id="">Point</button>
+                <p class="pname" id="p6t2n6">player6team2 : </p><button id="t2p6">0</button><input type="number" class="ip" id="t2p66"/><button onclick="scoresixteamtwo()" id="">Point</button>
+                <p class="pname" id="p7t2n7">player7team2 : </p><button id="t2p7">0</button><input type="number" class="ip" id="t2p77"/><button onclick="scoreseventeamtwo()" id="">Point</button>
+                <p class="pname" id="p8t2n8">player8team2 : </p><button id="t2p8">0</button><input type="number" class="ip" id="t2p88"/><button onclick="scoreeightteamtwo()" id="">Point</button>
+                <p class="pname" id="p9t2n9">player9team2 : </p><button id="t2p9">0</button><input type="number" class="ip" id="t2p99"/><button onclick="scorenineteamtwo()" id="">Point</button>
+                <p class="pname" id="p10t2n10">player10team2 : </p><button id="t2p10">0</button><input type="number" class="ip" id="t2p1010"/><button onclick="scoretenteamtwo()" id="">Point</button>
+            </div>
+        </div>
+    </div>
+    <script src="./kabaddi.js"></script>
+</body>
+</html>
